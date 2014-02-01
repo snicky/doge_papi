@@ -1,5 +1,6 @@
 require 'uri'
 require 'open-uri'
+require 'json'
 
 module DogeApi
   class DogeApi
