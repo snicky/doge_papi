@@ -4,7 +4,7 @@ $my_api_key = 'API_KEY'
 $my_address = 'DBv97MSG4gNjcGoHCMX1nfanLjzBgVERi9'
 $my_api_address = 'DPf8M6McXUZW5zDxwAKXAfid4A78P8o21M'
 
-doge_api = DogeApi::DogeApi.new($my_api_key)
+doge_api = DogePapi::DogeApi.new($my_api_key)
 doge_api.get_balance
 doge_api.withdraw :amount => 5, :payment_address => $my_address
 doge_api.get_new_address :address_label => 'my pretty address'
@@ -15,7 +15,7 @@ doge_api.get_difficulty
 doge_api.get_current_block
 doge_api.get_current_price
 
-doge_chain = DogeApi::DogeChain.new
+doge_chain = DogePapi::DogeChain.new
 doge_chain.addressbalance $my_address
 doge_chain.addresstohash $my_address
 doge_chain.checkaddress $my_address

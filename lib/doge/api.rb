@@ -1,8 +1,4 @@
-require 'uri'
-require 'open-uri'
-require 'json'
-
-module DogeApi
+module DogePapi
   class DogeApi
     attr_accessor :api_key
 
@@ -22,7 +18,7 @@ module DogeApi
     end
 
     def build_uri m, args
-      uri       = @base_uri
+      uri       = BASE_URI
       params    = args.merge a: m, api_key: @api_key
       uri.query = URI.encode_www_form params
       uri

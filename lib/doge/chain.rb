@@ -1,8 +1,4 @@
-require 'uri'
-require 'open-uri'
-require 'json'
-
-module DogeApi
+module DogePapi
   class DogeChain
 
     BASE_URI = 'http://dogechain.info/chain/Dogecoin/q'
